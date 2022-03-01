@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hubballi';
+}
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    background-color: #171F26;
+}
+.navbar{
+    width: 100%;
+    background-color: #7B838C;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+div.header{
+    font-size: 2rem;
+    font-weight: 1000;
+    margin-right: 2rem;
+}
+div.header font{
+    color: #08090D;
+}
+ul.links,
+ul.socials{
+    list-style-type: none;
+    box-sizing: border-box;
+}
+ul li{
+    display: inline;
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+ul.socials li{
+    margin: 0 0.5rem;
+}
+ul li a{
+    color: inherit;
+    text-decoration: none;
+    height: auto;
+}
+.space{
+    height: 4.5rem;
+}
+.space2{
+   height: 2rem;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 2rem;
+    flex-direction: column;
+    background-color: #08090D;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toggle-btn{
+    display: none;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 0;
+}
+ul.socials-bottom{
+    display: none;
+}
+.main{
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+p.info{
+    margin-left: 5rem;
+    font-size: 5rem;
+    font-weight: 1000;
+    color: #566573;
+}
+p.info font{
+    font-size: 7rem;
+    font-weight: 200;
+    color: #7B838C;
+    font-family: 'Courier New', Courier, monospace;
+}
+.img{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    position: relative;
+    overflow:hidden;
+}
+.img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.skills-cards{
+    width: 40rem;
+    height: 20rem;
+    margin: 1rem auto;
+    background-color: #566573;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2rem;
+    box-shadow: 10px 10px 3px #08090D;
+    position: relative;
+    left: -15%;
+}
+.skills-cards:nth-of-type(2n){
+    left: 15%;
+}
+.skills-cards h1{
+    color: #08090D;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.skillset{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    box-sizing: border-box;
+    border-top: 1px solid white;
+    padding: 1rem 0 1rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 2rem;
+}
+.skills-cards h3{
+    color: white;
+    font-size: 2rem;
+}
+@media screen and (max-width: 1024px) {
+    .skills-cards{
+        width: 20rem;
+        height: 10rem;
+        padding: 0.6rem;
+        left: -5%;
+    }
+.skills-cards:nth-of-type(2n){
+    left: 5%;
+}
+    .space2{
+        height: 4rem;
+    }
+    .skills-cards h1{
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .skills-cards h3{
+        font-size: 1rem;
+    }
+    .skillset{
+        font-size: 2rem;
+    }
+    .space{
+        height: 5.5rem;
+    }
+    p.info{
+        font-size: 2rem;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    p.info font{
+        font-size: 2rem;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .footer{
+        height: 4rem;
+    }
+    ul.socials-bottom{
+        display: block;
+        margin-bottom: 1rem;
+    }
+    ul.socials-bottom li{
+        display: inline;
+        margin: 0 0.5rem;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 4.5rem;
+        transition: height 150ms ease-out;
+    }
+    div.header{
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+    ul li{
+        font-size: 1.5rem;
+    }
+    ul.socials{
+        display: none;
+    }
+    ul.links{
+        height: 0;
+        overflow: hidden;
+        transition: height 150ms ease-out;
+    }
+    ul.link-show{
+        height: 10rem;
+    }
+    ul li{
+        display: block;
+        margin-top: 1rem;
+    }
+    .main{
+        height: 26rem;
+        margin-bottom: 2rem;
+    }
+    .img{
+        width: 20rem;
+        height: 20rem;
+    }
+    .toggle-btn{
+        display: block;
+        top: 0;
+        transform: translate(0);
+    }
+    .nav-large{
+        height: 15rem;
+    }
+}
